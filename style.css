@@ -846,7 +846,7 @@ template {
   position: fixed;
   z-index: 1000;
   flex-wrap: nowrap;
-  top: 12px;
+  top: 5px;
   display: flex;
   align-items: center;
 }
@@ -863,10 +863,10 @@ template {
 }
 #quicksettings:after {
   content: '';
-  display: block;
+  display: none;
   position: fixed;
   width: 100vw;
-  height: 121px;
+  height: 80px;
   top: 0;
   left: 0;
   z-index: 999;
@@ -886,25 +886,29 @@ template {
   z-index: 1001;
 }
 #quicksettings ul.options {
-  top: 88px !important;
+  /* top: 88px !important; */
   backdrop-filter: blur(24px) !important;
   max-height: 320px !important;
-  border: 2px solid var(--colorBorder);
+  /* border: 2px solid var(--colorBorder); */
   border-radius: var(--borderRadius);
+  position: absolute;
 }
 #quicksettings button.svelte-1ipelgc {
   margin-bottom: 3px;
+}
+#quicksettings span.svelte-1gfkn6j{
+  display: none;
 }
 #tabs > .tabitem {
   background: transparent;
   border: none;
   padding: var(--padding);
-  margin-top: 118px;
+  margin-top: 65px;
 }
 #tabs > div:first-child {
   position: fixed;
-  top: 90px;
-  z-index: 1000;
+  top: 50px;
+  z-index: 999;
   flex-wrap: nowrap;
   width: 100%;
   border: none;
@@ -1177,12 +1181,12 @@ div.svelte-awbtu4 .gradio-file {
   -moz-osx-font-smoothing: grayscale;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
     circle 600px at calc(100% - 300px) 300px,
     var(--colorPrimaryBgHover),
     var(--colorBgLayout)
   );
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 #txtimg_hr_finalres {
   color: var(--colorPrimary) !important;
